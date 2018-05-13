@@ -5,7 +5,6 @@
 
 #![doc(html_root_url = "https://docs.rs/build-plan/0.1.0")]
 #![warn(missing_debug_implementations)]
-#![warn(missing_docs)]
 
 #[macro_use]
 extern crate serde_derive;

@@ -1,0 +1,32 @@
+[package]
+name = "build-plan"
+version = "0.1.0"
+authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
+description = "A crate for parsing Cargo's --build-plan output"
+repository = "https://github.com/jonas-schievink/build-plan.git"
+readme = "README.md"
+license = "CC0-1.0"
+
+[dependencies]
+serde = "1.0.55"
+serde_derive = "1.0.55"
+serde_json = "1.0.17"
+semver = { version = "0.9.0", features = ["serde"] }
+
+# cargo-release configuration
+[package.metadata.release]
+tag-message = "{{version}}"
+no-dev-version = true
+pre-release-commit-message = "Release {{version}}"
+
+# Bump the version inside the example manifest in `README.md`
+[[package.metadata.release.pre-release-replacements]]
+file    = "README.md"
+search  = 'build-plan = "[a-z0-9\\.-]+"'
+replace = 'build-plan = "{{version}}"'
+
+# Bump the version referenced by the `html_root_url` attribute in `lib.rs`
+[[package.metadata.release.pre-release-replacements]]
+file    = "src/lib.rs"
+search  = "https://docs.rs/build-plan/[a-z0-9\\.-]+"
+replace = "https://docs.rs/build-plan/{{version}}"

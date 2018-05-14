@@ -2,6 +2,9 @@
 //!
 //! The main type is [`BuildPlan`]. To parse Cargo's output into a `BuildPlan`, call
 //! [`BuildPlan::from_cargo_output`].
+//!
+//! [`BuildPlan`]: struct.BuildPlan.html
+//! [`BuildPlan::from_cargo_output`]: struct.BuildPlan.html#method.from_cargo_output
 
 #![doc(html_root_url = "https://docs.rs/build-plan/0.1.0")]
 #![warn(missing_debug_implementations)]
@@ -109,6 +112,8 @@ pub struct Invocation {
     /// List of invocations this invocation depends on.
     ///
     /// The vector contains indices into the [`BuildPlan::invocations`] list.
+    ///
+    /// [`BuildPlan::invocations`]: struct.BuildPlan.html#structfield.invocations
     pub deps: Vec<usize>,
     /// List of output artifacts (binaries/libraries) created by this invocation.
     pub outputs: Vec<PathBuf>,

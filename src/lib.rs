@@ -6,7 +6,7 @@
 //! [`BuildPlan`]: struct.BuildPlan.html
 //! [`BuildPlan::from_cargo_output`]: struct.BuildPlan.html#method.from_cargo_output
 
-#![doc(html_root_url = "https://docs.rs/build-plan/0.1.0")]
+#![doc(html_root_url = "https://docs.rs/build-plan/0.1.1")]
 #![warn(missing_debug_implementations)]
 
 #[macro_use]

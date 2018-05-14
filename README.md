@@ -19,7 +19,7 @@ Add the dependency to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-build-plan = "0.1.0"
+build-plan = "0.1.1"
 ```
 
 Add the crate to your Rust code and import the `BuildPlan` type:

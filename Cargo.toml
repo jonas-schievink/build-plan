@@ -1,6 +1,6 @@
 [package]
 name = "build-plan"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
 description = "A crate for parsing Cargo's --build-plan output"
 repository = "https://github.com/jonas-schievink/build-plan.git"

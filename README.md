@@ -10,8 +10,7 @@ simple way to parse it back into structures without having to depend on the
 entirety of Cargo.
 
 Cargo's `--build-plan` functionality is currently *unstable*, so this only works
-on **nightly Rust** for now. Actually, at the time of writing, you even have to
-build Cargo from source for this!
+on **nightly Rust** for now.
 
 ## Usage
 

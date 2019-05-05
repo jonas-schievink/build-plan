@@ -9,7 +9,8 @@ how to compile the crate and its dependencies. The `build-plan` crate provides a
 simple way to parse it back into structures without having to depend on the
 entirety of Cargo.
 
-Cargo's `--build-plan` functionality is currently *unstable*, so this only works
+Cargo's `--build-plan` functionality is currently
+[*unstable*](https://github.com/rust-lang/cargo/issues/5579), so this only works
 on **nightly Rust** for now.
 
 ## Usage

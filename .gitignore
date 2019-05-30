@@ -1,3 +1,4 @@
 Cargo.lock
 /target
+/target_test
 **/*.rs.bk

@@ -10,6 +10,7 @@ fn reflect() {
     let plan = Command::new(env!("CARGO"))
         .arg("-Zunstable-options")
         .arg("build")
+        .args(&["--target-dir", "target_test"])
         .arg("--build-plan")
         .arg("--test")
         .arg("integration")

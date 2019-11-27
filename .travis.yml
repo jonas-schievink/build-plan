@@ -1,13 +1,12 @@
 language: rust
 rust:
   - nightly
-cache: cargo
 sudo: false
 env:
   global:
     - RUSTFLAGS="--deny warnings"
     - RUST_BACKTRACE=1
-    - CARGO_INCREMENTAL=0  # decrease size of `target` to make the cache smaller
+    - CARGO_INCREMENTAL=0  # not needed for CI builds
 script:
   - cargo test
 notifications:

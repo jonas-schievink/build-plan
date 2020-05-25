@@ -1,3 +1,5 @@
+**NOTE: `--build-plan` was removed, so this crate is now obsolete.**
+
 # Parser for Cargo's `--build-plan` output
 
 [![crates.io](https://img.shields.io/crates/v/build-plan.svg)](https://crates.io/crates/build-plan)
